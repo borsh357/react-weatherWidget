@@ -1,38 +1,80 @@
-.App {
+.container {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  padding: 100px 0;
+  width: 320px;
+  flex-wrap: wrap;
+}
+
+.weatherWidget {
+  background: #e6e6e6;
+  padding: 20px;
+  border-radius: 30px;
+  width: 320px;
+}
+
+.weatherWidget-city {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.weatherWidget-rainType {
+  font-size: 0.9rem;
+}
+
+.weatherWidget-temperature {
+  font-size: 1.6rem;
+}
+
+.text-center {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.rainTypeIcon {
+  background-size: cover;
+  margin: 0 auto;
+  width: 280px;
+  height: 280px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.rainType-sunny {
+  background-image: url('./img/sun.svg');
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.ww-sunny {
+  background: #e6f3ff;
 }
 
-.App-link {
-  color: #61dafb;
+.rainType-clouds {
+  background-image: url('./img/clouds.svg');
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.ww-clouds {
+  background: #b5b5b5;
+}
+
+.rainType-partialClouds {
+  background-image: url('./img/partialClouds.svg');
+}
+
+.ww-partialClouds {
+  background: #b4c0cc;
+}
+
+.rainType-rain {
+  background-image: url('./img/rain.svg');
+}
+
+.ww-rain {
+  background: #344e5d;
+  color: #dedede;
+}
+
+.rainType-snow {
+  background-image: url('./img/snow.svg');
+}
+
+.ww-snow {
+  background: #e4f2f4;
 }

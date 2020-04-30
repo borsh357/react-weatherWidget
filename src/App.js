@@ -1,25 +1,52 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import Container from './Components/Container';
+import WeatherWidget from './Components/WeatherWidget';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Container>
+      <WeatherWidget
+        city="Moscow"
+        rainType="Снег"
+        temperature="-20"
+        windSpeed="2"
+        windDirection="ЮВ"
+        humidity="45"
+      />
+      <WeatherWidget
+        city="Moscow"
+        rainType="Дождь"
+        temperature="20"
+        windSpeed="2"
+        windDirection="ЮВ"
+        humidity="85"
+      />
+      <WeatherWidget
+        city="Moscow"
+        rainType="Солнечно"
+        temperature="20"
+        windSpeed="2"
+        windDirection="ЮВ"
+        humidity="45"
+      />
+      <WeatherWidget
+        city="Moscow"
+        rainType="Переменная облачность"
+        temperature="20"
+        windSpeed="2"
+        windDirection="ЮВ"
+        humidity="45"
+      />
+      <WeatherWidget
+        city="Moscow"
+        rainType="Облачно"
+        temperature="20"
+        windSpeed="2"
+        windDirection="ЮВ"
+        humidity="45"
+      />
+    </Container>
   );
 }
 
