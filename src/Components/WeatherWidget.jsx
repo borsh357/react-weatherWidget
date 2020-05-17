@@ -1,5 +1,6 @@
 import React from 'react';
 import propTypes from 'prop-types';
+import './WeatherWidget.css';
 
 export default class WeatherWidget extends React.Component {
   render() {
